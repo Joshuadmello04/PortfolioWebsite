@@ -1,4 +1,7 @@
 import mainimg from '../images/abtme.jpg';
+import java from '../images/java.jpg'
+import app from '../images/app.webp'
+import iot from '../images/iot.jpg'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -17,7 +20,7 @@ export const EXPERIENCES = [
     role: "Webmaster",
     company: "Students Council",
     description: `Built websites, handled scores and event masters  for all major events of the academic year.`,
-    technologies: ["HTML","Tailwind CSS","JavaScript", "Excel"],
+    technologies: ["HTML","Tailwind","JavaScript", "Excel"],
   },
   {
     year: "2023",
@@ -44,19 +47,19 @@ export const PROJECTS = [
   },
   {
     title: "IOT Baggage Tracker",
-    image: mainimg,
+    image: iot,
     description:"A physical location tracking device, to be attached to bags, which provides real-time location to a web app on a map and access to shipping services that can bring the bag back to the customer.",
     technologies: [ "React", "Node.js", "Arduino","Python"],
   },
   {
     title: "Meter Reading App",
-    image: mainimg,
+    image: app,
     description:"An app that automates the work for meter readers traveling house to house and manually reading and entering the meter readings. A Flutter app for HPCL meter readers. It simplifies the manual task of inputting readings for HPCL customers by allowing users to capture an image of the reading. The app then accurately extracts and updates the data in the database along with storing the image.",
     technologies: ["Flutter", "Dart", "SQLite", "GoogleOCR"],
   },
   {
     title: "Java ATM Machine GUI ",
-    image: mainimg,
+    image: java,
     description:"A modern GUI that simulates the working of an ATM machine. It stores the login credentials, the balance and data of a user, and enables smooth transactions and an option to withdraw or deposit money from the user's account.",
     technologies: ["Core Java", "PhpAdmin"],
   },
