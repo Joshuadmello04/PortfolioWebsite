@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Techstack from "./components/Techstack";
-
+import Scroller from "./components/Scroller"
 const App = () => {
   return (
     <>
@@ -24,6 +24,8 @@ const App = () => {
           <Contact />
           <Footer />
         </div>
+        <Scroller />
+
       </div>
     </>
   );

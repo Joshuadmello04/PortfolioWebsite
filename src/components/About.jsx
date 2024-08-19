@@ -7,7 +7,7 @@ const About = () => {
               whileInView={{opacity:1,y:50}}
               initial={{opacity:0,y:0}}
               transition={{duration:0.75}}
-              className="my-20 text-center text-4xl">About <span className="text-neutral-500">Me</span></motion.h1>
+              className="my-20 text-center text-6xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text tracking-tight text-transparent">About <span className="text-neutral-500">Me</span></motion.h1>
             <div className="flex flex-wrap">
                 <motion.div
                     whileInView={{ opacity: 1, x: 0 }}
@@ -24,8 +24,8 @@ const About = () => {
                     transition={{duration:0.5}}
                     className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:justify-start">
-                        <p className="my-2 max-w-xl py-6 tracking-tighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nemo corporis pariatur! Quidem, error ullam, impedit voluptatibus dolorem, dolore facilis nemo accusantium nostrum reprehenderit praesentium repellendus consequatur porro explicabo suscipit quae a autem est! Similique vitae facere nisi. Molestiae corporis mollitia culpa vitae numquam consequuntur in earum ducimus voluptates sit, veritatis commodi facilis veniam excepturi eveniet. Vero iusto minus velit quis, repudiandae recusandae similique unde aperiam praesentium optio id natus reprehenderit, vel molestiae facilis odio quidem cumque odit! Rerum, ut eaque ipsum eius labore nisi velit quis exercitationem hic odio cupiditate quo sequi suscipit, numquam libero sit distinctio aliquam officia?</p>
-                    </div>
+                        <p className="my-2 max-w-xl py-6 lg:text-2xl tracking-tighter font-normal">Third Year Computer Engineering Student at Fr. CRCE. A passionate developer focused on creating innovative and efficient solutions striving to deliver exceptional results & an avid enthusiast of football, basketball and theology. An ambitious student with a desire to excel across all facets of life. I have worked with a variety of technologies including Java Springboot, MERN stack, Streamlit, Flask and Flutter. </p>
+                        </div>
                 </motion.div>
             </div>
         </div>

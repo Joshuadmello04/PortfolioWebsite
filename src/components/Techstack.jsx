@@ -23,7 +23,7 @@ const Techstack = () => {
                 whileInView={{ opacity: 1, y: 10 }}
                 initial={{ opacity: 0, y: -40 }}
                 transition={{ duration: 0.75 }}
-                className="my-20 text-center text-4xl">
+                className="my-20 text-center text-6xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text tracking-tight text-transparent">
                 Tech<span className="text-neutral-600">Stack</span>
             </motion.h1>
             <div className="flex flex-wrap items-center justify-center gap-6 sm:my-2.5">

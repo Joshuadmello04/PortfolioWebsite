@@ -10,7 +10,7 @@ export const EXPERIENCES = [
     role: "IS Intern",
     company: "Hindustan Petroleum Pvt Ltd",
     description: `Dwelt upon full stack web development using Java Springboot.Worked closely with a team of fellow interns and my project mentor to define project requirements and timelines.`,
-    technologies: ["Java Springboot","HTML","CSS","JS","HeidiSql", "MariaDB"],
+    technologies: ["Java Springboot","HeidiSql", "MariaDB"],
   },
   {
     year: "2023 - 2024",
@@ -40,24 +40,24 @@ export const PROJECTS = [
     title: "Slum Community-Centric App and Government Portal",
     image: mainimg,
     description:"A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned.It also allows management of smart contracts for property rights",
-    technologies: ["React", "React-Native", "MongoDb", "Express", "Nodejs"],
+    technologies: ["React-Native", "MongoDb", "Nodejs","React"],
   },
   {
     title: "IOT Baggage Tracker",
     image: mainimg,
-    description:"A PHYSICAL LOCATION TRACKING DEVICE, TO BE ATTACHED TO BAGS WHICH PROVIDES REAL TIME LOCATION TO A WEB APP ON A MAP AND ACCESS TO SHIPPING SERVICES THAT CAN BRING THE BAG BACK TO THE CUSTOMER",
+    description:"A physical location tracking device, to be attached to bags, which provides real-time location to a web app on a map and access to shipping services that can bring the bag back to the customer.",
     technologies: [ "React", "Node.js", "Arduino","Python"],
   },
   {
     title: "Meter Reading App",
     image: mainimg,
-    description:"AN APP THAT AUTOMATES THE WORK FOR METER READERS TRAVELLING HOUSE TO HOUSE AND MANUALLY READING AND ENTERING THE METER READINGS. A FLUTTER APP FOR HPCL METER READERS. IT SIMPLIFIES THE MANUAL TASK OF INPUTTING READINGS FOR HPCL CUSTOMERS BY ALLOWING USERS TO CAPTURE AN IMAGE OF THE READING. THE APP THEN ACCURATELY EXTRACTS AND UPDATES THE DATA IN THE DATABASE ALONG WITH STORING THE IMAGE",
+    description:"An app that automates the work for meter readers traveling house to house and manually reading and entering the meter readings. A Flutter app for HPCL meter readers. It simplifies the manual task of inputting readings for HPCL customers by allowing users to capture an image of the reading. The app then accurately extracts and updates the data in the database along with storing the image.",
     technologies: ["Flutter", "Dart", "SQLite", "GoogleOCR"],
   },
   {
     title: "Java ATM Machine GUI ",
     image: mainimg,
-    description:"A MODERN GUI THAT SIMULATES THE WORKING OF AN ATM MACHINE.IT STORES THE LOGIN CREDENTIALS,THE BALANCE AND DATA OF A USER AND ENABLES SMOOTH TRANSACTIONS AND AN OPTION TO WITHDRAW OR DEPOSIT MONEY FROM THE USERS ACCOUNT",
+    description:"A modern GUI that simulates the working of an ATM machine. It stores the login credentials, the balance and data of a user, and enables smooth transactions and an option to withdraw or deposit money from the user's account.",
     technologies: ["Core Java", "PhpAdmin"],
   },
 ];

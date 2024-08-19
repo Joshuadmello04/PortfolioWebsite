@@ -8,7 +8,7 @@ const Contact = () => {
   whileInView={{ opacity: 1, y: 10 }}
                 initial={{ opacity: 0, y: -40 }}
                 transition={{ duration: 0.75 }}
-  className="my-20 text-center text-4xl">Get in Touch
+  className="my-20 text-center bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text text-7xl tracking-tight text-transparent">Get in Touch
   </motion.h1>
   <motion.p
   whileInView={{ opacity: 1, y: 10 }}

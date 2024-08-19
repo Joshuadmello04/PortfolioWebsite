@@ -39,7 +39,7 @@ const AnimatedText = () => {
   }, []);
 
   return (
-    <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
+    <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text text-7xl tracking-tight text-transparent">
       <span ref={typedElement}></span>
     </span>
   );
@@ -58,8 +58,8 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl">Joshua Dmello</motion.h1>
-            <motion.div
+              className="pb-16 text-8xl font-thin tracking-normal lg:mt-16 lg:text-8xl">Joshua Dmello</motion.h1>
+            <motion.div className='pb-8'
               variants={container(0.5)}
               initial="hidden"
               animate="visible">
@@ -69,11 +69,11 @@ const Hero = () => {
             <motion.p 
             variants={container(1)}
               initial="hidden"
-              animate="visible"
-            className="my-2 max-w-xl font-light py-6 tracking-tighter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, suscipit accusantium! Doloremque magnam perspiciatis unde facere? Reiciendis velit, odio, architecto totam a ullam facere alias optio aspernatur sit, amet iste? Repellendus nobis molestias quis ducimus officia? Voluptas odit dicta nam! Eius architecto odit, fugiat ullam atque voluptas. A, quod et!</motion.p>
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Download Resume
+              animate="visible" 
+            className="my-2 max-w-xl text-xl font-normal py-6 tracking-normal">I am a passionate Web Developer, App Developer and AI/ML enthusiast.   My favourite tech includes MERN,Tailwind CSS,Streamlit and Flutter.</motion.p>
+            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text- font-semibold text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
+                View Resume
               </span>
             </button>
           </div>
