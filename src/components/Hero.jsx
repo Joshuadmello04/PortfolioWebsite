@@ -58,7 +58,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-8xl font-thin tracking-normal lg:mt-16 lg:text-8xl">Joshua Dmello</motion.h1>
+              className="pb-16 text-6xl font-thin tracking-normal lg:mt-16 lg:text-8xl">Joshua Dmello</motion.h1>
             <motion.div className='pb-8'
               variants={container(0.5)}
               initial="hidden"
