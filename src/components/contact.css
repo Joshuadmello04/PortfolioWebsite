@@ -1,0 +1,10 @@
+/* custom.css */
+.glassmorphic {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Adjust blur level as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+    padding: 2rem; /* Adjust padding as needed */
+  }
+  
