@@ -1,5 +1,6 @@
 import { PROJECTS } from "../assets/content"
 import { motion } from 'framer-motion'
+import './glass.css'
 
 const Projects = () => {
   return (
@@ -29,6 +30,7 @@ const Projects = () => {
               {project.technologies.map((tech, index) => (
                 <span key={index} className="py-1.5 px-1.5 text-sm font-bold mr-2 mt-4 rounded text-purple-600 bg-neutral-900">{tech}</span>
               )
+              
               )}
             </motion.div>
           </div>

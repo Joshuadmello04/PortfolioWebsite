@@ -39,7 +39,7 @@ const AnimatedText = () => {
   }, []);
 
   return (
-    <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text text-7xl tracking-tight text-transparent">
+    <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text text-5xl tracking-tight text-transparent">
       <span ref={typedElement}></span>
     </span>
   );
@@ -58,7 +58,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-normal lg:mt-16 lg:text-8xl">Joshua Dmello</motion.h1>
+              className="pb-16 text-8xl font-light tracking-normal lg:mt-16 lg:text-8xl">Joshua Dmello</motion.h1>
             <motion.div className='pb-8'
               variants={container(0.5)}
               initial="hidden"
