@@ -1,7 +1,7 @@
-import mainimg from '../images/abtme.jpg';
 import java from '../images/java.jpg'
 import app from '../images/app.webp'
 import iot from '../images/iot.jpg'
+import shahar from '../images/ShaharSaath.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -41,7 +41,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Slum Community-Centric App and Government Portal",
-    image: mainimg,
+    image: shahar,
     description:"A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned.It also allows management of smart contracts for property rights",
     technologies: ["React-Native", "MongoDb", "Nodejs","React"],
   },

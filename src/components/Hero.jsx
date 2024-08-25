@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import profilePic from "../assets/images/mainimg.jpg";
+import face2 from '../assets/images/face2.jpg';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion'
 
@@ -84,7 +84,7 @@ const Hero = () => {
             initial={{x:100,opacity:0}} 
             animate={{x:0,opacity:1}}
             transition={{duration:1,delay:1.2}}
-            src={profilePic} className="rounded-2xl w-100 h-100" alt="Profile" />
+            src={face2} className="rounded-2xl w-100 h-100" alt="Profile" />
           </div>
         </div>
       </div>
