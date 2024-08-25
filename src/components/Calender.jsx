@@ -15,7 +15,7 @@ const Calendar = () => {
         initial= {{opacity:0,y:-20}}
         transition={{duration:0.75}}
       className="text-xl my-10 mb-11">
-View my <span className=" text-2xl bg-gradient-to-r from-green-300 via-green-450 to-green-600 bg-clip-text to-white text-transparent">Github</span> contributions.
+Check out my <span className=" text-2xl bg-gradient-to-r from-green-300 to-green-600 bg-clip-text text-transparent">Github</span> contributions.
       </motion.p>
       <GitHubCalendar
         className="m-10"
