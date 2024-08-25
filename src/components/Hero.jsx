@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import face2 from '../assets/images/face2.jpg';
+import face2 from '../assets/images/mainimg.jpg';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion'
 
