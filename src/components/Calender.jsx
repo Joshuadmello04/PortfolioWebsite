@@ -18,11 +18,11 @@ const Calendar = () => {
 Check out my <span className=" text-2xl bg-gradient-to-r from-green-300 to-green-600 bg-clip-text text-transparent">Github</span> contributions.
       </motion.p>
       <GitHubCalendar
-        className="m-10"
+        className="m-10 text-pink-300 "
         username="joshuadmello04"
         colorScheme="dark"
         blockSize={20}
-        fontSize={20}
+        fontSize={17}
       />
     </div>
   );
