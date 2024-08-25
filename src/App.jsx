@@ -1,4 +1,6 @@
+//import GitHubCalendar from "react-github-calendar";
 import About from "./components/About";
+import Calendar from "./components/Calender";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
@@ -6,6 +8,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Techstack from "./components/Techstack";
+
 //import Scroller from "./components/Scroller"
 
 const App = () => {
@@ -23,6 +26,13 @@ const App = () => {
           <Hero />
           <About />
           <Techstack />
+          {/* <GitHubCalendar className='my-3'
+            username="joshuadmello04"
+            colorScheme="dark"
+            blockSize={16}
+            fontSize={16}
+          /> */}
+          <Calendar />
           <Experience />
           <Projects />
           <Contact />
