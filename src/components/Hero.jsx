@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
-import face2 from '../assets/images/mainimg.jpg';
+import face2 from '../assets/images/face2.jpg';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion'
-
+import Resume from '../assets/images/resumeJoshuaDmello.pdf';
 const container = (delay) => (
   {
     hidden: { x: -100, opacity: 0 },
@@ -13,6 +13,7 @@ const container = (delay) => (
     }
   }
 )
+
 // AnimatedText Component
 const AnimatedText = () => {
   const typedElement = useRef(null);
@@ -47,13 +48,13 @@ const AnimatedText = () => {
 
 // Hero Component
 const Hero = () => {
+
   return (
     <div className="border-b border-neutral-900 pb-14 lg:mb-35"> {/*border after this entire div*/}
       <div className="flex flex-wrap pb-14">
         <div className="w-full lg:w-1/2 pb-4">
           {/*for all text*/}
           <div className="flex flex-col items-center lg:items-start">
-            {/*initial={{x:-100, opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1, delay:0.5}} */}
             <motion.h1
               variants={container(0)}
               initial="hidden"
@@ -67,24 +68,29 @@ const Hero = () => {
             </motion.div>
             {/* Replacing the static span with the AnimatedText component */}
             <motion.p 
-            variants={container(1)}
+              variants={container(1)}
               initial="hidden"
               animate="visible" 
-            className="my-2 max-w-xl text-xl font-normal py-6 tracking-normal">I am a passionate Web Developer, App Developer and AI/ML enthusiast.   My favourite tech includes MERN,Tailwind CSS,Streamlit and Flutter.</motion.p>
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text- font-semibold text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 ">
+              className="my-2 max-w-xl text-xl font-normal py-6 tracking-normal">I am a passionate Web Developer, App Developer and AI/ML enthusiast. My favourite tech includes MERN, Tailwind CSS, Streamlit and Flutter.</motion.p>
+            <a 
+              href={Resume}
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text- font-semibold text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800"
+            >
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 View Resume
               </span>
-            </button>
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
             <motion.img 
-            initial={{x:100,opacity:0}} 
-            animate={{x:0,opacity:1}}
-            transition={{duration:1,delay:1.2}}
-            src={face2} className="rounded-2xl w-100 h-100" alt="Profile" />
+              initial={{x:100, opacity:0}} 
+              animate={{x:0, opacity:1}}
+              transition={{duration:1, delay:1.2}}
+              src={face2} className="rounded-2xl w-100 h-100" alt="Profile" />
           </div>
         </div>
       </div>
