@@ -51,8 +51,8 @@ const Contact = () => {
           transition={{ duration: 0.75 }}
           className="mb-8 lg:mb-16 font-light text-gray-500 dark:text-gray-400 sm:text-xl"
         >
-          Id love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out. Im always open to discussing new opportunities and collaborations.
-        </motion.p>
+        Let's Connect! 🚀
+        Got a question, an epic project idea, or just want to say hey? I'm all ears! Whether you're here for collaboration or just to chat, don't hesitate to drop a message. I'm always excited to explore new opportunities and make cool things happen together.        </motion.p>
         <motion.form
           onSubmit={handleSubmit}
           whileInView={{ opacity: 1, y: 10 }}

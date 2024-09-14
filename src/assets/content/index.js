@@ -42,7 +42,7 @@ export const PROJECTS = [
   {
     title: "Slum Community-Centric App and Government Portal",
     image: shahar,
-    description:"A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned.It also allows management of smart contracts for property rights",
+    description:"A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned and offers educational and industry standard courses for slum upgradation.",
     technologies: ["React-Native", "MongoDb", "Nodejs","React"],
   },
   {
