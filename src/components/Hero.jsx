@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion';
 import face1 from '../assets/images/face3.jpg';
-import face2 from '../assets/images/face2.jpg';
+import face2 from '../assets/images/crmd.jpg';
 import face3 from '../assets/images/mainimg.jpg'; 
 import Resume from '../assets/images/resumeJoshuaDmello.pdf';
 
