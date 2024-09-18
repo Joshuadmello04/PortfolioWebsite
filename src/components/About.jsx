@@ -24,7 +24,7 @@ const About = () => {
                     transition={{duration:0.5}}
                     className="w-full lg:w-1/2">
                     <div className="flex justify-center lg:justify-start">
-                        <p className="my-2 max-w-xl py-6 lg:text-xl tracking-tighter ">Third Year Computer Engineering Student at Fr. CRCE. A passionate developer focused on creating innovative and efficient solutions striving to deliver exceptional results & an avid enthusiast of football, basketball and theology. An ambitious student with a desire to excel across all facets of life. I have worked with a variety of technologies including Java Springboot, MERN stack, Streamlit, Flask and Flutter. </p>
+                        <p className="my-2 max-w-xl py-6 lg:text-xl tracking-tighter ">I am a third-year Computer Engineering student at Fr. CRCE, driven by a passion for creating innovative and efficient solutions. My journey as a developer spans a diverse range of technologies, including Java SpringBoot, the MERN stack, Streamlit, Flask, and Flutter. Beyond my technical expertise, I am deeply enthusiastic about football, with Chelsea FC as my favorite team, and I admire Cristiano Ronaldo for his exceptional skill and relentless pursuit of greatness. This blend of professional dedication and personal passion fuels my ambition to excel across all facets of life. Whether navigating complex development challenges or finding balance through sports and theology, I strive to deliver exceptional results and continuously grow both personally and professionally.</p>
                         </div>
                 </motion.div>
             </div>

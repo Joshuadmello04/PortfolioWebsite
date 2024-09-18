@@ -66,7 +66,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="border-b border-neutral-900 pb-14 lg:mb-35">
+    <div className="border-b border-neutral-900 mt-14 pb-14 lg:mb-35">
       <div className="flex flex-wrap pb-14">
         <div className="w-full lg:w-1/2 pb-4">
           <div className="flex flex-col items-center lg:items-start">

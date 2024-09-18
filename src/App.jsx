@@ -1,4 +1,3 @@
-//import GitHubCalendar from "react-github-calendar";
 import About from "./components/About";
 import Calendar from "./components/Calender";
 import Contact from "./components/Contact";
@@ -8,8 +7,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Techstack from "./components/Techstack";
-
-//import Scroller from "./components/Scroller"
+import ScrollToTop from "./components/Scroller"; // Import your ScrollToTop component
 
 const App = () => {
   return (
@@ -24,21 +22,29 @@ const App = () => {
         <div className="container mx-auto px-8 overflow-hidden">
           <Navbar />
           <Hero />
-          <About />
-          <Techstack />
-          {/* <GitHubCalendar className='my-3'
-            username="joshuadmello04"
-            colorScheme="dark"
-            blockSize={16}
-            fontSize={16}
-          /> */}
-          <Calendar />
-          <Experience />
-          <Projects />
-          <Contact />
+          <section id="about">
+            <About />
+          </section>
+          <section id="techstack">
+            <Techstack />
+          </section>
+          <section id="calendar">
+            <Calendar />
+          </section>
+          <section id="experience">
+            <Experience />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
           <Footer />
         </div>
-        {/*<Scroller /> */}
+
+        {/* Scroll to Top Button */}
+        <ScrollToTop />
       </div>
     </>
   );
