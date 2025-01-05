@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import face1 from '../assets/images/face3.jpg';
 import face2 from '../assets/images/crmd.jpg';
 import face3 from '../assets/images/mainimg.jpg'; 
-import Resume from '../assets/images/resumeJoshuaDmello.pdf';
+import Resume from '../assets/images/JoshuaDmello.pdf';
 
 const images = [face1, face2, face3];
 
@@ -58,7 +58,7 @@ const Hero = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Change image every 3 seconds
+    }, 4000); // Change image every 3 seconds
 
     return () => {
       clearInterval(interval);
