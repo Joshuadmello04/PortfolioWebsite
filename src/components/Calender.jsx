@@ -22,7 +22,7 @@ const Calendar = () => {
         whileInView={{opacity:1, y:10}}
         initial={{opacity:0, y:-20}}
         transition={{duration:0.75}}
-        className="mt-20 text-center bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text text-7xl tracking-tight text-transparent"
+        className="pb-8 mt-20 tracking-tight text-center text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-7xl"
       >
         GitHub Activity
       </motion.h2>
@@ -31,9 +31,9 @@ const Calendar = () => {
         whileInView={{opacity:1, y:10}}
         initial={{opacity:0, y:-20}}
         transition={{duration:0.75}}
-        className="text-xl my-10 mb-11"
+        className="my-10 text-xl mb-11"
       >
-        Check out my <span className="text-2xl bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent">GitHub</span> contributions.
+        Check out my <span className="text-2xl text-transparent bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text">GitHub</span> contributions.
       </motion.p>
       
       <GitHubCalendar

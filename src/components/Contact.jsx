@@ -36,12 +36,12 @@ const Contact = () => {
 
   return (
     <section>
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <div className="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
         <motion.h1
           whileInView={{ opacity: 1, y: 10 }}
           initial={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.75 }}
-          className="my-20 text-center bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 pb-8 bg-clip-text text-7xl tracking-tight text-transparent"
+          className="pb-8 my-20 tracking-tight text-center text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-7xl"
         >
           Get in Touch
         </motion.h1>
@@ -49,7 +49,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 10 }}
           initial={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.75 }}
-          className="mb-8 lg:mb-16 font-light text-gray-500 dark:text-gray-400 sm:text-xl"
+          className="mb-8 font-light text-gray-500 lg:mb-16 dark:text-gray-400 sm:text-xl"
         >
         Let's Connect! 🚀
         Got a question, an epic project idea, or just want to say hey? I'm all ears! Whether you're here for collaboration or just to chat, don't hesitate to drop a message. I'm always excited to explore new opportunities and make cool things happen together.        </motion.p>
@@ -58,10 +58,10 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 10 }}
           initial={{ opacity: 0, y: -40 }}
           transition={{ duration: 1 }}
-          className="glassmorphic space-y-8"
+          className="space-y-8 glassmorphic"
         >
           <div>
-            <label htmlFor="email" className="block mb-2 text-m font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="email" className="block mb-2 font-medium text-gray-900 text-m dark:text-gray-300">
               Your Email
             </label>
             <input
@@ -75,7 +75,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label htmlFor="subject" className="block mb-2 text-m font-medium text-gray-900 dark:text-gray-300">
+            <label htmlFor="subject" className="block mb-2 font-medium text-gray-900 text-m dark:text-gray-300">
               Subject
             </label>
             <input
@@ -83,13 +83,13 @@ const Contact = () => {
               id="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               placeholder="Let me know how I can help you"
               required
             />
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block mb-2 text-m font-medium text-gray-900 dark:text-gray-400">
+            <label htmlFor="message" className="block mb-2 font-medium text-gray-900 text-m dark:text-gray-400">
               Your message
             </label>
             <textarea
