@@ -1,4 +1,5 @@
-import java from '../images/java.jpg'
+import ecovision from '../images/ecovision.png'
+import solofounder from '../images/solofounder.png'
 import app from '../images/app.webp'
 import iot from '../images/iot.jpg'
 import shahar from '../images/ShaharSaath.png'
@@ -42,14 +43,26 @@ export const PROJECTS = [
   {
     title: "Slum Community-Centric App and Government Portal",
     image: shahar,
-    description:"A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned and offers educational and industry standard courses for slum upgradation.",
-    technologies: ["React-Native", "MongoDb", "Nodejs","React"],
+    description: "A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned. It also offers educational and industry-standard courses for slum upgradation.",
+    technologies: ["React-Native", "MongoDb", "Node.js", "React"],
   },
   {
     title: "IOT Baggage Tracker",
     image: iot,
-    description:"A physical location tracking device, to be attached to bags, which provides real-time location to a web app on a map and access to shipping services that can bring the bag back to the customer.",
-    technologies: [ "React", "Node.js", "Arduino","Python"],
+    description: "A physical location tracking device, to be attached to bags, which provides real-time location to a web app on a map and access to shipping services that can bring the bag back to the customer.",
+    technologies: ["React", "Node.js", "Arduino", "Python"],
+  },
+  {
+    title: "EcoVision - AI for Sustainable Urban Development",
+    image: ecovision,
+    description: "An AI-powered sustainability assessment tool that analyzes urban areas using satellite imagery and pre trained models to identify environmental concerns such as air pollution, deforestation, and waste management inefficiencies.",
+    technologies: ["Google Earth Engine", "FastAPI", "Streamlit", "ReactJS"],
+  },
+  {
+    title: "SoloFounder AI - Startup Ideation and Validation Platform",
+    image: solofounder,
+    description: "An AI-driven platform that helps solo entrepreneurs generate, validate, and refine startup ideas by leveraging large-scale market research, trend analysis, and financial forecasting.",
+    technologies: ["Next.js", "Google-Trends API", "LinkedIn API", "Typescript"],
   },
   {
     title: "Meter Reading App",
@@ -57,13 +70,8 @@ export const PROJECTS = [
     description:"An app that automates the work for meter readers traveling house to house and manually reading and entering the meter readings. A Flutter app for HPCL meter readers. It simplifies the manual task of inputting readings for HPCL customers by allowing users to capture an image of the reading. The app then accurately extracts and updates the data in the database along with storing the image.",
     technologies: ["Flutter", "Dart", "SQLite", "GoogleOCR"],
   },
-  {
-    title: "Java ATM Machine GUI ",
-    image: java,
-    description:"A modern GUI that simulates the working of an ATM machine. It stores the login credentials, the balance and data of a user, and enables smooth transactions and an option to withdraw or deposit money from the user's account.",
-    technologies: ["Core Java", "PhpAdmin"],
-  },
 ];
+
 
 export const CONTACT = {
   address: "767 Fifth Avenue, New York, NY 10153",

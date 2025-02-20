@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { RiReactjsLine, RiJavaFill, RiNextjsFill } from "react-icons/ri";
 import { SiFlutter, SiSpringboot, SiStreamlit, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiMongodb, SiFirebase, SiSqlite } from "react-icons/si";
-import { BiLogoPostgresql, BiLogoNodejs, BiLogoBootstrap, BiLogoFlask } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoNodejs, BiLogoFlask } from "react-icons/bi";
 import { FaPython } from "react-icons/fa";
 import ScrollVelocity from './ScrollVelocity';
 
@@ -83,7 +83,7 @@ const TechCarousel = () => {
                   scale: 1.05,
                   boxShadow: "0 8px 20px rgba(231, 112, 160, 0.1)"
                 }}
-                className="inline-flex items-center justify-center gap-2 px-8 py-5 mx-6 
+                className="inline-flex items-center justify-center gap-2 px-8 py-5 mx-3 
                           rounded-xl bg-neutral-900/40 backdrop-blur-sm
                           border-2 border-neutral-600 transition-all duration-300
                           hover:border-[#E670A0] hover:bg-neutral-900/60"
@@ -99,7 +99,7 @@ const TechCarousel = () => {
             ))]}
             velocity={rowIndex === 0 ? 20 : rowIndex === 1 ? 35 : 25}
             numCopies={4}
-            velocityMapping={{ input: [50, 1000], output: [0, 3] }}
+            velocityMapping={{ input: [100, 1000], output: [0, 3] }}
             damping={50}
             stiffness={400}
             parallaxClassName="overflow-hidden"
