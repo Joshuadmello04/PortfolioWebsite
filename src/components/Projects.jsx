@@ -3,30 +3,34 @@ import PropTypes from 'prop-types';
 import { motion, useMotionValue, useSpring, AnimatePresence } from "framer-motion";
 import { PROJECTS } from "../assets/content";
 import './glass.css';
-
+import { FaGithub } from 'react-icons/fa'
 // Modal component for project details
 const ProjectModal = ({ isOpen, onClose, project }) => {
   if (!isOpen) return null;
-  
+
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
-          <motion.div 
-            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-sm"
+        <div className="fixed inset-0 z-40 flex items-center justify-center">
+          <motion.div
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
           />
-          <motion.div 
-            className="fixed z-50 w-11/12 max-w-md p-6 -translate-x-1/2 -translate-y-1/2 border shadow-2xl top-1/2 left-1/2 bg-neutral-800/90 rounded-xl backdrop-blur-md border-purple-500/20"
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+          <motion.div
+            className="relative z-50 w-11/12 max-w-md p-6 mx-auto border shadow-2xl bg-neutral-800/90 rounded-xl backdrop-blur-md border-purple-500/20"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            style={{
+              maxHeight: '90vh',
+              overflowY: 'auto'
+            }}
           >
-            <button 
+            <button
               className="absolute transition-colors top-4 right-4 text-neutral-400 hover:text-white"
               onClick={onClose}
               aria-label="Close modal"
@@ -35,26 +39,38 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            
+
             <h2 className="mb-4 text-2xl font-bold text-white md:text-3xl">{project.title}</h2>
             <p className="mb-6 text-sm text-neutral-300 md:text-base">{project.description}</p>
-            
+
             <h3 className="mb-2 text-lg font-semibold text-purple-300">Technologies</h3>
+           
             <div className="flex flex-wrap gap-2 mb-6">
               {project.technologies.map((tech, index) => (
-                <span 
-                  key={index} 
-                  className="px-3 py-1 text-xs font-semibold text-purple-300 rounded-full bg-purple-500/20 backdrop-blur-sm"
+                <span
+                  key={index}
+                  className="px-3 py-1 text-xs font-semibold text-white rounded-full bg-[#C72465] backdrop-blur-sm"
                 >
                   {tech}
                 </span>
               ))}
             </div>
-            
+            <a
+            href="https://github.com/Joshuadmello04"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg p-0.5 transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#C72465]"
+          >
+            <span className="absolute inset-0 bg-gradient-to-br from-[#382039] via-[#722050] to-[#C72465] transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-[#722050] group-hover:via-[#C72465] group-hover:to-[#E670A0]"></span>
+            <span className="relative flex items-center gap-2 px-6 py-3 text-sm font-medium text-white transition-all duration-300 rounded-lg bg-black/10 backdrop-blur-sm group-hover:bg-black/20">
+              <FaGithub className="w-5 h-5" />
+              GitHub
+            </span>
+          </a>
             {project.link && (
-              <a 
-                href={project.link} 
-                target="_blank" 
+              <a
+                href={project.link}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block w-full px-5 py-3 font-medium text-center text-white transition-opacity rounded-lg shadow-lg md:w-auto bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 hover:shadow-purple-500/30"
               >
@@ -62,7 +78,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               </a>
             )}
           </motion.div>
-        </>
+        </div>
       )}
     </AnimatePresence>
   );
@@ -80,7 +96,7 @@ ProjectModal.propTypes = {
   }).isRequired,
 };
 
-// TiltedCard component with project-specific modifications
+// Rest of the components remain unchanged
 const TiltedProjectCard = ({
   project,
   rotateAmplitude = 10,
@@ -186,7 +202,7 @@ const TiltedProjectCard = ({
           </motion.div>
         </motion.div>
       </motion.div>
-      
+
       <ProjectModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
@@ -211,7 +227,7 @@ TiltedProjectCard.propTypes = {
 const Projects = () => {
   return (
     <section id="projects" className="px-4 pb-16 border-b border-neutral-900">
-      <motion.h1 
+      <motion.h1
         whileInView={{ opacity: 1, y: 10 }}
         initial={{ opacity: 0, y: -40 }}
         transition={{ duration: 0.75 }}
@@ -219,7 +235,7 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
-      
+
       <div className="grid grid-cols-1 gap-6 mx-auto gap-y-12 max-w-7xl md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project, index) => (
           <TiltedProjectCard key={index} project={project} />
