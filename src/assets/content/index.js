@@ -2,6 +2,7 @@ import ecovision from '../images/ecovision.png'
 import solofounder from '../images/solofounder.png'
 import app from '../images/app.webp'
 import iot from '../images/iot.jpg'
+import iit from '../images/iit.jpg'
 import shahar from '../images/ShaharSaath.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
@@ -70,6 +71,12 @@ export const PROJECTS = [
     description:"An app that automates the work for meter readers traveling house to house and manually reading and entering the meter readings. A Flutter app for HPCL meter readers. It simplifies the manual task of inputting readings for HPCL customers by allowing users to capture an image of the reading. The app then accurately extracts and updates the data in the database along with storing the image.",
     technologies: ["Flutter", "Dart", "SQLite", "GoogleOCR"],
   },
+  {
+    title:"Logistics Route Optimizer",
+    image:iit,
+    description:"An AI Agent that optimizes the routes across various modes of transport using A Star Search Algorithm, whilst dynamically updating routes based on news across the world to show top routes based off cost,time and countries to avoid",
+    technologies:["NextJs","Prisma","Postgresql","Python","Google Maps API","Agno"]
+  }
 ];
 
 
