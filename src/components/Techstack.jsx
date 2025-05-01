@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { RiReactjsLine, RiJavaFill, RiNextjsFill,RiAmazonFill } from "react-icons/ri";
+import { RiReactjsLine, RiJavaFill, RiNextjsFill } from "react-icons/ri";
 import { SiFlutter, SiSpringboot, SiStreamlit, SiTailwindcss, SiJavascript, SiHtml5, SiCss3, SiMongodb, SiFirebase, SiSqlite } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoNodejs, BiLogoFlask } from "react-icons/bi";
 import { FaPython } from "react-icons/fa";
@@ -12,7 +12,6 @@ const techStackRows = [
     { name: 'HTML5', icon: <SiHtml5 className="text-6xl text-orange-600" /> },
     { name: 'CSS3', icon: <SiCss3 className="text-6xl text-blue-600" /> },
     { name: 'JavaScript', icon: <SiJavascript className="text-6xl text-yellow-500" /> },
-    { name: 'AWS', icon: <RiAmazonFill className="text-6xl text-orange-400/95" /> },
     { name: 'TailwindCSS', icon: <SiTailwindcss className="text-6xl text-cyan-500" /> },
     { name: 'NextJS', icon: <RiNextjsFill className="text-6xl text-white" /> },
     { name: 'ReactJS', icon: <RiReactjsLine className="text-6xl text-cyan-600" /> },
