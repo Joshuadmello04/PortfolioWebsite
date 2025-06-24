@@ -11,6 +11,13 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
+    year: "2025",
+    role: "Full Stack Developer",
+    company: "Tridenzic",
+    description: `Built a full stack website for a salonist based in Bangalore.Visit at https://trystsalonandspa.com/`,
+    technologies: ["ReactJS","NodeJS", "ExpressJS","MongoDB","TailwindCSS"],
+  },
+  {
     year: "2024",
     role: "IS Intern",
     company: "Hindustan Petroleum Pvt Ltd",
@@ -42,16 +49,10 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Slum Community-Centric App and Government Portal",
-    image: shahar,
-    description: "A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned. It also offers educational and industry-standard courses for slum upgradation.",
-    technologies: ["React-Native", "MongoDb", "Node.js", "React"],
-  },
-  {
-    title: "IOT Baggage Tracker",
-    image: iot,
-    description: "A physical location tracking device, to be attached to bags, which provides real-time location to a web app on a map and access to shipping services that can bring the bag back to the customer.",
-    technologies: ["React", "Node.js", "Arduino", "Python"],
+    title:"Logistics Route Optimizer",
+    image:iit,
+    description:"An AI Agent that optimizes the routes across various modes of transport using A Star Search Algorithm, whilst dynamically updating routes based on news across the world to show top routes based off cost,time and countries to avoid",
+    technologies:["NextJs","Prisma","Postgresql","Python","Google Maps API","Agno"]
   },
   {
     title: "EcoVision - AI for Sustainable Urban Development",
@@ -66,17 +67,24 @@ export const PROJECTS = [
     technologies: ["Next.js", "Google-Trends API", "LinkedIn API", "Typescript"],
   },
   {
+    title: "Slum Community-Centric App and Government Portal",
+    image: shahar,
+    description: "A transparent and automated solution for slum dwellers to voice their grievances to the government and the department concerned. It also offers educational and industry-standard courses for slum upgradation.",
+    technologies: ["React-Native", "MongoDb", "Node.js", "React"],
+  },
+  {
+    title: "IOT Baggage Tracker",
+    image: iot,
+    description: "A physical location tracking device, to be attached to bags, which provides real-time location to a web app on a map and access to shipping services that can bring the bag back to the customer.",
+    technologies: ["React", "Node.js", "Arduino", "Python"],
+  },
+  {
     title: "Meter Reading App",
     image: app,
     description:"An app that automates the work for meter readers traveling house to house and manually reading and entering the meter readings. A Flutter app for HPCL meter readers. It simplifies the manual task of inputting readings for HPCL customers by allowing users to capture an image of the reading. The app then accurately extracts and updates the data in the database along with storing the image.",
     technologies: ["Flutter", "Dart", "SQLite", "GoogleOCR"],
   },
-  {
-    title:"Logistics Route Optimizer",
-    image:iit,
-    description:"An AI Agent that optimizes the routes across various modes of transport using A Star Search Algorithm, whilst dynamically updating routes based on news across the world to show top routes based off cost,time and countries to avoid",
-    technologies:["NextJs","Prisma","Postgresql","Python","Google Maps API","Agno"]
-  }
+  
 ];
 
 
