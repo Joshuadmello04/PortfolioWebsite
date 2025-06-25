@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import face1 from '../assets/images/face3.jpg';
 import face2 from '../assets/images/crmd.jpg';
 import face3 from '../assets/images/mainimg.jpg';
-import Resume from '../assets/images/JoshuaDmello.pdf';
+import Resume from '../assets/JoshuaDmelloUBS.pdf';
 
 const images = [face1, face2, face3];
 
