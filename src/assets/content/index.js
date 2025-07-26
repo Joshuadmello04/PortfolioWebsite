@@ -14,7 +14,7 @@ export const EXPERIENCES = [
     year: "2025",
     role: "Full Stack Developer",
     company: "Tridenzic",
-    description: `Built a full stack website for a salonist based in Bangalore.Visit at https://trystsalonandspa.com/`,
+    description: `Built a full stack website for a salonist based in Bangalore.Check my work : https://trystsalonandacademy.com....Many more projects to be revealed soon...`,
     technologies: ["ReactJS","NodeJS", "ExpressJS","MongoDB","TailwindCSS"],
   },
   {
