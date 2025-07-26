@@ -26,7 +26,7 @@ const Experience = () => {
                 <h6 className="mb-2 text-base font-bold">
                 {experience.role} - <span className='text-lg text-purple-100'>{experience.company}</span>
                 </h6>
-                <p className='p-1 mb-4 text-neutral-400'>{experience.description}</p>
+                <p className='p-1 mb-4 text-neutral-400' dangerouslySetInnerHTML={{ __html: experience.description }} />
                    {experience.technologies.map((tech,index) =>(
                       <span key={index} className='mr-2 mt-4 rounded bg-neutral-900  px-2 py-1.5 text-sm font-bold text-purple-600'> 
                          {tech}
