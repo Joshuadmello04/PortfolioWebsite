@@ -1,7 +1,7 @@
-import { useEffect,useRef } from "react";
-import { useLocation } from "react-router-dom";
-import ReactGA from "react-ga";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { useLocation, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ReactGA from "react-ga4";
+
 import About from "./components/About";
 import Calendar from "./components/Calender";
 import Contact from "./components/Contact";
@@ -15,15 +15,16 @@ import ScrollToTop from "./components/Scroller";
 
 const App = () => {
   const location = useLocation();
-  const contactRef = useRef(null);  
+  const contactRef = useRef(null);
+
+  // Initialize GA once
   useEffect(() => {
-    // Initialize Google Analytics
-    ReactGA.initialize('G-H5SGHT651D'); // Replace with your actual GA Measurement ID
+    ReactGA.initialize("G-H5SGHT651D"); // ✅ Your GA4 Measurement ID
   }, []);
 
+  // Track page views on route changes
   useEffect(() => {
-    // Track page views on route change
-    ReactGA.pageview(location.pathname + location.search);
+    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
   }, [location]);
 
   return (
