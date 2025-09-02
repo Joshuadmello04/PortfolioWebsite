@@ -17,12 +17,13 @@ const App = () => {
   const location = useLocation();
   const contactRef = useRef(null);
 
-  // Initialize GA once
+  // ✅ Initialize GA once
   useEffect(() => {
-    ReactGA.initialize("G-H5SGHT651D"); // ✅ Your GA4 Measurement ID
+    ReactGA.initialize("G-H5SGHT651D"); // your GA4 Measurement ID
+    ReactGA.send("pageview"); // ✅ send initial pageview
   }, []);
 
-  // Track page views on route changes
+  // ✅ Track page views when route changes
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
   }, [location]);
